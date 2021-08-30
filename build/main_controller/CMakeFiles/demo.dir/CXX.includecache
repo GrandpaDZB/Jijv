@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude/common_parameters.h
+
+/home/grandpadzb/github/Jijv/src/main_controller/include/GeometryComputer/WalkingGait.h
+iostream
+-
+eigen3/Eigen/Dense
+-
+common_parameters.h
+-
+
+/home/grandpadzb/github/Jijv/src/main_controller/src/demo.cpp
+WalkingGait.h
+-
+iostream
+-
+

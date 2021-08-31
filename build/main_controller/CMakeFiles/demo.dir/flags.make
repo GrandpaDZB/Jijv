@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"main_controller\"
 
-CXX_INCLUDES = -I/home/grandpadzb/github/Jijv/src/main_controller/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/grandpadzb/github/Jijv/src/main_controller/include/MathTools -I/home/grandpadzb/github/Jijv/src/main_controller/include/StateWorkers -I/home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude -I/home/grandpadzb/github/Jijv/src/main_controller/include/GeometryComputer -isystem /usr/local/include/opencv
+CXX_INCLUDES = -I/home/grandpadzb/github/Jijv/src/main_controller/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/home/grandpadzb/github/Jijv/src/main_controller/include/MathTools -I/home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar -I/home/grandpadzb/github/Jijv/src/main_controller/include/StateWorkers -I/home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude -I/home/grandpadzb/github/Jijv/src/main_controller/include/GeometryComputer -isystem /usr/local/include/opencv
 
 CXX_FLAGS =  -std=c++11 -O3
 

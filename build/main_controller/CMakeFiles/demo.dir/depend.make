@@ -4,6 +4,8 @@
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude/common_defination.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude/common_parameters.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /home/grandpadzb/github/Jijv/src/main_controller/include/GeometryComputer/WalkingGait.h
+main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/Communication.h
+main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/MsgJar.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /home/grandpadzb/github/Jijv/src/main_controller/src/demo.cpp
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h

@@ -5,6 +5,8 @@ main_controller/CMakeFiles/demo.dir/src/demo.cpp.o
  /home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude/common_defination.h
  /home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude/common_parameters.h
  /home/grandpadzb/github/Jijv/src/main_controller/include/GeometryComputer/WalkingGait.h
+ /home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/Communication.h
+ /home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/MsgJar.h
  /home/grandpadzb/github/Jijv/src/main_controller/src/demo.cpp
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h

@@ -28,6 +28,11 @@ enum MOTOR_FLOW{
     WALKING4,
     WALKING5,
     WALKING6,
+    RESET0,
+    RESET1,
+    RESET2,
+    RESET3,
+    RESET4,
 };
 
 

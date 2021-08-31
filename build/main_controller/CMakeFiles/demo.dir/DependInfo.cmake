@@ -22,6 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv"
   "/home/grandpadzb/github/Jijv/src/main_controller/include/MathTools"
+  "/home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar"
   "/home/grandpadzb/github/Jijv/src/main_controller/include/StateWorkers"
   "/home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude"
   "/home/grandpadzb/github/Jijv/src/main_controller/include/GeometryComputer"

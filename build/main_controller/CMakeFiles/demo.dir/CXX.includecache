@@ -19,8 +19,18 @@ common_parameters.h
 -
 common_defination.h
 -
+Communication.h
+-
+MsgJar.h
+-
 ros/ros.h
 -
+
+/home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/Communication.h
+common_parameters.h
+-
+
+/home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/MsgJar.h
 
 /home/grandpadzb/github/Jijv/src/main_controller/src/demo.cpp
 WalkingGait.h

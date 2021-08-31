@@ -34,6 +34,7 @@ include_directories(
           ${catkin_INCLUDE_DIRS}
           ${CMAKE_CURRENT_SOURCE_DIR}/include
           ${CMAKE_CURRENT_SOURCE_DIR}/include/MathTools
+          ${CMAKE_CURRENT_SOURCE_DIR}/include/MsgJar
           ${CMAKE_CURRENT_SOURCE_DIR}/include/StateWorkers
           ${CMAKE_CURRENT_SOURCE_DIR}/include/CommonInclude
           ${CMAKE_CURRENT_SOURCE_DIR}/include/GeometryComputer

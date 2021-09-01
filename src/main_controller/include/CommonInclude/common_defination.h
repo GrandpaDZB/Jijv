@@ -18,21 +18,10 @@ enum HALF_LEGS_TYPE{
 
 // Motor flow
 enum MOTOR_FLOW{
-    READY0,
-    READY1,
-    READY2,
-    READY3,
-    WALKING1,
-    WALKING2,
-    WALKING3,
-    WALKING4,
-    WALKING5,
-    WALKING6,
-    RESET0,
-    RESET1,
-    RESET2,
-    RESET3,
-    RESET4,
+    MOTOR_FLOW_READY,
+    MOTOR_FLOW_WALKING1,
+    MOTOR_FLOW_WALKING2,
+    MOTOR_FLOW_RESET,
 };
 
 

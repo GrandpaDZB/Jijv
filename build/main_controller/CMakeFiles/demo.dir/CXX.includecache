@@ -9,6 +9,26 @@
 /home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude/common_defination.h
 
 /home/grandpadzb/github/Jijv/src/main_controller/include/CommonInclude/common_parameters.h
+eigen3/Eigen/Dense
+-
+
+/home/grandpadzb/github/Jijv/src/main_controller/include/GeometryComputer/MotorCenterV2.h
+iostream
+-
+eigen3/Eigen/Dense
+-
+common_parameters.h
+-
+common_defination.h
+-
+Communication.h
+-
+MsgJar.h
+-
+WalkingGait.h
+-
+ros/ros.h
+-
 
 /home/grandpadzb/github/Jijv/src/main_controller/include/GeometryComputer/WalkingGait.h
 iostream
@@ -26,6 +46,22 @@ MsgJar.h
 ros/ros.h
 -
 
+/home/grandpadzb/github/Jijv/src/main_controller/include/MathTools/PSO.h
+iostream
+-
+eigen3/Eigen/Dense
+-
+vector
+-
+ctime
+-
+
+/home/grandpadzb/github/Jijv/src/main_controller/include/MathTools/RangeComputer.h
+PSO.h
+-
+common_parameters.h
+-
+
 /home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/Communication.h
 common_parameters.h
 -
@@ -36,6 +72,12 @@ common_parameters.h
 WalkingGait.h
 -
 iostream
+-
+time.h
+-
+RangeComputer.h
+-
+MotorCenterV2.h
 -
 
 /opt/ros/melodic/include/ros/advertise_options.h

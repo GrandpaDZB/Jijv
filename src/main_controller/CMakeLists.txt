@@ -17,6 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   cv_bridge
   nav_msgs
+  sensor_msgs
   mavros_msgs
 )
 

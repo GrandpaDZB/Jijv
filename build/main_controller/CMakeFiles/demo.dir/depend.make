@@ -28,6 +28,7 @@ main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/message.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/message_event.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/message_forward.h
+main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/message_operations.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/message_traits.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/names.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/node_handle.h
@@ -65,6 +66,8 @@ main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/wall_timer.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
+main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/sensor_msgs/Joy.h
+main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 main_controller/CMakeFiles/demo.dir/src/demo.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 

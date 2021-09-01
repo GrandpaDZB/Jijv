@@ -79,6 +79,8 @@ RangeComputer.h
 -
 MotorCenterV2.h
 -
+sensor_msgs/Joy.h
+-
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h
@@ -288,6 +290,10 @@ boost/make_shared.hpp
 cstddef
 -
 memory
+-
+
+/opt/ros/melodic/include/ros/message_operations.h
+ostream
 -
 
 /opt/ros/melodic/include/ros/message_traits.h
@@ -721,6 +727,40 @@ ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
 
 /opt/ros/melodic/include/rosconsole/macros_generated.h
+
+/opt/ros/melodic/include/sensor_msgs/Joy.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+
+/opt/ros/melodic/include/std_msgs/Header.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h

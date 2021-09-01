@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-30 22:07:12
- * @LastEditTime: 2021-09-01 22:04:09
+ * @LastEditTime: 2021-09-01 22:37:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /Jijv/src/main_controller/src/demo.cpp
@@ -11,7 +11,24 @@
 #include <time.h>
 #include <RangeComputer.h>
 #include <MotorCenterV2.h>
+#include <sensor_msgs/Joy.h>
 using namespace std;
+
+
+void Callback_joy(const sensor_msgs::JoyConstPtr & msg){
+    float x = -msg->axes[0];
+    float y = msg->axes[1];
+    if(x == 0 && y == 0){
+        cout << "center" << endl;
+        return;
+    }
+    float theta = acos(x/sqrt(x*x+y*y));
+    if(y < 0){
+        theta = 2*3.1415926 - theta;
+    }
+    cout << theta*(180/3.1415926) << endl;
+}
+
 
 int main(int argc, char** argv){
     // MotorCenter model;
@@ -34,9 +51,13 @@ int main(int argc, char** argv){
     //     else{}
     // }
 
-    float L_max = 4.0, L_min = 0.5;
-    RangeComputer model_RC(0.0, 3.0, 20, 0.5, 4.0);
-    model_RC.run(40, 3.1415926/6.0);
+    ros::init(argc, argv, "test_node");
+    ros::NodeHandle nh;
+
+    
+
+    ros::Subscriber sub_joy = nh.subscribe<sensor_msgs::Joy>("joy", 10, Callback_joy);
+    ros::spin();
 
     return 0;
 }

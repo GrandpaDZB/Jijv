@@ -19,6 +19,7 @@ find_package(catkin REQUIRED COMPONENTS
   nav_msgs
   sensor_msgs
   mavros_msgs
+  serial
 )
 
 find_package(OpenCV REQUIRED)

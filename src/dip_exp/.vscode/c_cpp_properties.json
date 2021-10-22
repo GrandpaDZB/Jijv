@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/grandpadzb/sun_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/grandpadzb/github/Jijv/src/dip_exp/include/**",
+        "/home/grandpadzb/github/Jijv/src/main_controller/include/**",
+        "/home/grandpadzb/sun_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

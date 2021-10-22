@@ -120,6 +120,7 @@ demo_EXTERNAL_OBJECTS =
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /opt/ros/melodic/lib/libserial.so
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/local/lib/libopencv_dnn.so.3.4.12
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/local/lib/libopencv_highgui.so.3.4.12
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/local/lib/libopencv_ml.so.3.4.12
@@ -150,6 +151,7 @@ demo_EXTERNAL_OBJECTS =
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /opt/ros/melodic/lib/libserial.so
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/local/lib/libopencv_calib3d.so.3.4.12
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/local/lib/libopencv_features2d.so.3.4.12
 /home/grandpadzb/github/Jijv/devel/lib/main_controller/demo: /usr/local/lib/libopencv_flann.so.3.4.12

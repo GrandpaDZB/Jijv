@@ -1,0 +1,8 @@
+prefix=/home/grandpadzb/github/Jijv/install
+
+Name: DIP_exp
+Description: Description of DIP_exp
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

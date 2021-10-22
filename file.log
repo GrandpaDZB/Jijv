@@ -1,0 +1,6 @@
+[ 50%] Built target demo
+Scanning dependencies of target exp1
+[ 75%] Building CXX object dip_exp/CMakeFiles/exp1.dir/src/exp1.cpp.o
+dip_exp/CMakeFiles/exp1.dir/build.make:81: recipe for target 'dip_exp/CMakeFiles/exp1.dir/src/exp1.cpp.o' failed
+CMakeFiles/Makefile2:1652: recipe for target 'dip_exp/CMakeFiles/exp1.dir/all' failed
+Makefile:159: recipe for target 'all' failed

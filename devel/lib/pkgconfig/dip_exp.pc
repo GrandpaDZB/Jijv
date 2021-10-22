@@ -1,0 +1,8 @@
+prefix=/home/grandpadzb/github/Jijv/devel
+
+Name: dip_exp
+Description: Description of dip_exp
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

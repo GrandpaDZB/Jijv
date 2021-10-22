@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<robot name="smartcar">
+    <link name="body">
+        <visual>
+            <geometry>
+                <box size="1.0 0.659917 0.289687"/>
+            </geometry>
+            <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+            <material name="blue">
+                <color rgba="0.0 0.2 0.6 0.8"/>
+            </material>
+        </visual>
+    </link>
+
+    <link name="left_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.3" length="0.25"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 0.5"/>
+            </material>
+            <!-- <origin rpy="1.5707 0.0 0.0" xyz="0.092763 -0.452822 0.021687"/> -->
+        </visual>
+    </link>
+
+    <link name="right_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.3" length="0.25"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 0.5"/>
+            </material>
+            <!-- <origin rpy="1.5707 0.0 0.0" xyz="0.092763 0.457154 0.021687"/> -->
+        </visual>
+    </link>
+
+    <link name="back_wheel">
+        <visual>
+            <geometry>
+                <sphere radius="0.2"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 0.5"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="left_wheel_joint" type="continuous">
+        <axis xyz="0.0 0.0 1.0"/>
+        <parent link="body"/>
+        <child link="left_wheel"/>
+        <!-- <origin /> -->
+        <origin rpy="1.5707 0.0 0.0" xyz="0.092763 -0.452822 0.021687"/>
+        <limit effort="100.0" velocity="100.0"/>
+    </joint>
+
+    <joint name="right_wheel_joint" type="continuous">
+        <axis xyz="0.0 0.0 1.0"/>
+        <parent link="body"/>
+        <child link="right_wheel"/>
+        <!-- <origin /> -->
+        <origin rpy="1.5707 0.0 0.0" xyz="0.092763 0.452822 0.021687"/>
+        <limit effort="100.0" velocity="100.0"/>
+    </joint>
+
+    <joint name="back_wheel_joint" type="continuous">
+        <axis xyz="0.0 0.0 1.0"/>
+        <parent link="body"/>
+        <child link="back_wheel"/>
+        <limit effort="100.0" velocity="100.0"/>
+    </joint>
+
+
+</robot>

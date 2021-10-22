@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-09-01 18:41:30
- * @LastEditTime: 2021-09-01 22:07:30
+ * @LastEditTime: 2021-09-03 10:54:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /Jijv/src/main_controller/include/GeometryComputer/MotorCenterV1.h
@@ -30,7 +30,7 @@ public:
     float init_l[6];
     float init_angles[6][3];
 
-    int motor_flow;
+    int motor_flow = Tail::MOTOR_FLOW_READY;
 
     float C_x[6], C_y[6], T_x[6], T_y[6];
 
@@ -44,13 +44,20 @@ public:
 };
 
 
+/**
+ * @description: Compute all angles that servo should be set to drive robot walk with theta & velocity_rate
+ * @param {legState*} leg_set; leg set array
+ * @param {float} theta; degree measure
+ * @param {float} velocity_rate; [0,1] to set the velocity between 0 and max
+ * @return {*}
+ */
 void MotorCenter::compute_Arm_Angles_from_Orientation(legState* leg_set, float theta, float velocity_rate){
     // compute unit direction vector
     Vector2f unit_direct = Vector2f(cos(theta*3.1415926/180.0), sin(theta*3.1415926/180.0));
     // obtain optimized delta_f from table
     float delta_f = Tail::FO_LIB[(int)theta]*velocity_rate;
     
-    for(int i = this->lift_part; i < 4; i += 2){
+    for(int i = this->lift_part; i < 6; i += 2){
         Vector2f Ti = Vector2f(this->T_x[i],this->T_y[i]);
         Vector2f Ci = Vector2f(this->C_x[i],this->C_y[i]);
         Vector2f li = Ti+delta_f*unit_direct-Ci;
@@ -72,7 +79,7 @@ void MotorCenter::compute_Arm_Angles_from_Orientation(legState* leg_set, float t
         WalkingGait_Update_Angles_by_ShadowLength(leg_set[i].cast_shadow_length, &leg_set[i].arm_angle_2, &leg_set[i].arm_angle_3);
         
     }
-    for(int i = this->down_part; i < 4; i += 2){
+    for(int i = this->down_part; i < 6; i += 2){
         leg_set[i].arm_angle_2 = this->init_angles[i][0];
         leg_set[i].arm_angle_2 = this->init_angles[i][1];
         leg_set[i].arm_angle_2 = this->init_angles[i][1];
@@ -81,6 +88,11 @@ void MotorCenter::compute_Arm_Angles_from_Orientation(legState* leg_set, float t
     return;
 }
 
+/**
+ * @description: Alter lift part of legs
+ * @param {*}
+ * @return {*}
+ */
 void MotorCenter::alter_lift_part(){
     if(this->lift_part == Tail::EVEN_PART){
         this->lift_part = Tail::ODD_PART;

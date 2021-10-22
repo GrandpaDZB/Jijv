@@ -9,6 +9,23 @@
 #include <MsgJar.h>
 #include <ros/ros.h>
 
+/**
+ * @description: Change radian measure to degree measure
+ * @param {float} radian
+ * @return {float} degree
+ */
+float radian2degree(float radian){
+    return radian*180.0/3.1415926;
+}
+/**
+ * @description: Change degree measure to radian measure 
+ * @param {float} degree
+ * @return {float} radian
+ */
+float degree2radian(float degree){
+    return degree*3.1415926/180.0;
+}
+
 
 /**
  * @description: A single cast-shadow leg length could uniquely reflect into a set of angles --- angle_2 & angle_3. This function does help with updating 

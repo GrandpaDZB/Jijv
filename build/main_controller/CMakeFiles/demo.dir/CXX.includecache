@@ -65,6 +65,16 @@ common_parameters.h
 /home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/Communication.h
 common_parameters.h
 -
+common_defination.h
+-
+ros/ros.h
+-
+string.h
+-
+serial/serial.h
+-
+iostream
+-
 
 /home/grandpadzb/github/Jijv/src/main_controller/include/MsgJar/MsgJar.h
 
@@ -79,7 +89,11 @@ RangeComputer.h
 -
 MotorCenterV2.h
 -
+Communication.h
+-
 sensor_msgs/Joy.h
+-
+serial/serial.h
 -
 
 /opt/ros/melodic/include/ros/advertise_options.h
@@ -744,6 +758,32 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 std_msgs/Header.h
+-
+
+/opt/ros/melodic/include/serial/serial.h
+limits
+-
+vector
+-
+string
+-
+cstring
+-
+sstream
+-
+exception
+-
+stdexcept
+-
+serial/v8stdint.h
+-
+
+/opt/ros/melodic/include/serial/v8stdint.h
+stddef.h
+-
+stdio.h
+-
+stdint.h
 -
 
 /opt/ros/melodic/include/std_msgs/Header.h

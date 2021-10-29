@@ -187,6 +187,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+dip_exp/CMakeFiles/exp3.dir/rule:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dip_exp/CMakeFiles/exp3.dir/rule
+.PHONY : dip_exp/CMakeFiles/exp3.dir/rule
+
+# Convenience name for target.
+exp3: dip_exp/CMakeFiles/exp3.dir/rule
+
+.PHONY : exp3
+
+# fast build rule for target.
+exp3/fast:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/exp3.dir/build.make dip_exp/CMakeFiles/exp3.dir/build
+.PHONY : exp3/fast
+
+# Convenience name for target.
 dip_exp/CMakeFiles/exp2.dir/rule:
 	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dip_exp/CMakeFiles/exp2.dir/rule
 .PHONY : dip_exp/CMakeFiles/exp2.dir/rule
@@ -350,6 +365,21 @@ rosgraph_msgs_generate_messages_eus: dip_exp/CMakeFiles/rosgraph_msgs_generate_m
 rosgraph_msgs_generate_messages_eus/fast:
 	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make dip_exp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+dip_exp/CMakeFiles/CircleDetect.dir/rule:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dip_exp/CMakeFiles/CircleDetect.dir/rule
+.PHONY : dip_exp/CMakeFiles/CircleDetect.dir/rule
+
+# Convenience name for target.
+CircleDetect: dip_exp/CMakeFiles/CircleDetect.dir/rule
+
+.PHONY : CircleDetect
+
+# fast build rule for target.
+CircleDetect/fast:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/CircleDetect.dir/build.make dip_exp/CMakeFiles/CircleDetect.dir/build
+.PHONY : CircleDetect/fast
 
 # Convenience name for target.
 dip_exp/CMakeFiles/roscpp_generate_messages_py.dir/rule:
@@ -966,6 +996,33 @@ uuid_msgs_generate_messages_cpp/fast:
 	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make dip_exp/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
 .PHONY : uuid_msgs_generate_messages_cpp/fast
 
+src/CircleDetect.o: src/CircleDetect.cpp.o
+
+.PHONY : src/CircleDetect.o
+
+# target to build an object file
+src/CircleDetect.cpp.o:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/CircleDetect.dir/build.make dip_exp/CMakeFiles/CircleDetect.dir/src/CircleDetect.cpp.o
+.PHONY : src/CircleDetect.cpp.o
+
+src/CircleDetect.i: src/CircleDetect.cpp.i
+
+.PHONY : src/CircleDetect.i
+
+# target to preprocess a source file
+src/CircleDetect.cpp.i:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/CircleDetect.dir/build.make dip_exp/CMakeFiles/CircleDetect.dir/src/CircleDetect.cpp.i
+.PHONY : src/CircleDetect.cpp.i
+
+src/CircleDetect.s: src/CircleDetect.cpp.s
+
+.PHONY : src/CircleDetect.s
+
+# target to generate assembly for a file
+src/CircleDetect.cpp.s:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/CircleDetect.dir/build.make dip_exp/CMakeFiles/CircleDetect.dir/src/CircleDetect.cpp.s
+.PHONY : src/CircleDetect.cpp.s
+
 src/exp1.o: src/exp1.cpp.o
 
 .PHONY : src/exp1.o
@@ -1019,6 +1076,33 @@ src/exp2.s: src/exp2.cpp.s
 src/exp2.cpp.s:
 	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/exp2.dir/build.make dip_exp/CMakeFiles/exp2.dir/src/exp2.cpp.s
 .PHONY : src/exp2.cpp.s
+
+src/exp3.o: src/exp3.cpp.o
+
+.PHONY : src/exp3.o
+
+# target to build an object file
+src/exp3.cpp.o:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/exp3.dir/build.make dip_exp/CMakeFiles/exp3.dir/src/exp3.cpp.o
+.PHONY : src/exp3.cpp.o
+
+src/exp3.i: src/exp3.cpp.i
+
+.PHONY : src/exp3.i
+
+# target to preprocess a source file
+src/exp3.cpp.i:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/exp3.dir/build.make dip_exp/CMakeFiles/exp3.dir/src/exp3.cpp.i
+.PHONY : src/exp3.cpp.i
+
+src/exp3.s: src/exp3.cpp.s
+
+.PHONY : src/exp3.s
+
+# target to generate assembly for a file
+src/exp3.cpp.s:
+	cd /home/grandpadzb/github/Jijv/build && $(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/exp3.dir/build.make dip_exp/CMakeFiles/exp3.dir/src/exp3.cpp.s
+.PHONY : src/exp3.cpp.s
 
 # Help Target
 help:
@@ -1083,14 +1167,22 @@ help:
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... CircleDetect"
 	@echo "... exp1"
 	@echo "... exp2"
+	@echo "... exp3"
+	@echo "... src/CircleDetect.o"
+	@echo "... src/CircleDetect.i"
+	@echo "... src/CircleDetect.s"
 	@echo "... src/exp1.o"
 	@echo "... src/exp1.i"
 	@echo "... src/exp1.s"
 	@echo "... src/exp2.o"
 	@echo "... src/exp2.i"
 	@echo "... src/exp2.s"
+	@echo "... src/exp3.o"
+	@echo "... src/exp3.i"
+	@echo "... src/exp3.s"
 .PHONY : help
 
 

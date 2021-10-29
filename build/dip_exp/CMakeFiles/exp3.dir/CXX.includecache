@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/grandpadzb/github/Jijv/src/dip_exp/include/CannyProcessor.h
+iostream
+-
+opencv2/opencv.hpp
+-
+vector
+-
+
+/home/grandpadzb/github/Jijv/src/dip_exp/include/HoughTransformer.h
+iostream
+-
+opencv2/opencv.hpp
+-
+vector
+-
+math.h
+-
+
+/home/grandpadzb/github/Jijv/src/dip_exp/src/exp3.cpp
+CannyProcessor.h
+-
+opencv2/opencv.hpp
+-
+HoughTransformer.h
+-
+

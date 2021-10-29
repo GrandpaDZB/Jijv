@@ -304,6 +304,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named exp3
+
+# Build rule for target.
+exp3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exp3
+.PHONY : exp3
+
+# fast build rule for target.
+exp3/fast:
+	$(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/exp3.dir/build.make dip_exp/CMakeFiles/exp3.dir/build
+.PHONY : exp3/fast
+
+#=============================================================================
 # Target rules for targets named exp2
 
 # Build rule for target.
@@ -445,6 +458,19 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 rosgraph_msgs_generate_messages_eus/fast:
 	$(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make dip_exp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named CircleDetect
+
+# Build rule for target.
+CircleDetect: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CircleDetect
+.PHONY : CircleDetect
+
+# fast build rule for target.
+CircleDetect/fast:
+	$(MAKE) $(MAKESILENT) -f dip_exp/CMakeFiles/CircleDetect.dir/build.make dip_exp/CMakeFiles/CircleDetect.dir/build
+.PHONY : CircleDetect/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
@@ -1060,9 +1086,11 @@ help:
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... CircleDetect"
 	@echo "... demo"
 	@echo "... exp1"
 	@echo "... exp2"
+	@echo "... exp3"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

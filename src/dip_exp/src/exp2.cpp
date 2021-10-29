@@ -10,8 +10,8 @@ int main(int argc, char** argv){
     
     // 设置结构元素为3*3大小，值全是1的核
     delete[] Processor.kernel;
-    Processor.kernel = Processor.full3_kernel;
-    Processor.kernel_size = 3;
+    Processor.kernel = Processor.full5_kernel;
+    Processor.kernel_size = 5;
     
     // 设置高斯滤波器的核大小为3*3，标准差为5.0
     GFilter.kernel_size = 5;

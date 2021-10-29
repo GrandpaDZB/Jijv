@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/grandpadzb/github/Jijv/src/dip_exp/include/CircleDetector.h
+iostream
+-
+opencv2/opencv.hpp
+-
+eigen3/Eigen/Dense
+-
+math.h
+-
+
+/home/grandpadzb/github/Jijv/src/dip_exp/src/CircleDetect.cpp
+CircleDetector.h
+-
+

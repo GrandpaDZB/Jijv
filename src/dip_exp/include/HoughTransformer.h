@@ -233,6 +233,7 @@ void HoughTransformer::Hough_Line_Detect(vector<int*> points, float max_scan_r, 
     float r = (scan_area[1][0]+scan_area[1][1])/2.0;
     params[0] = tan(3.1415926/2+theta);
     params[1] = r/sin(theta);
+    delete[] scan_area;
     return;
 }
 
@@ -255,6 +256,8 @@ void HoughTransformer::Hough_Circle_Detect(vector<int*> points, float max_a, flo
     params[0] = (scan_area[0][0]+scan_area[0][1])/2.0;
     params[1] = (scan_area[1][0]+scan_area[1][1])/2.0;
     params[2] = (scan_area[2][0]+scan_area[2][1])/2.0;
+
+    delete[] scan_area;
     return;
 }
 
@@ -276,10 +279,12 @@ vector<vector<int>> HoughTransformer::find_link_neighbors(cv::Mat p, int x, int 
     return neighbors;
 }
 
+// TODO this function is not robust enough
 vector<vector<int*>> HoughTransformer::get_edgeSubsets(cv::Mat src, int min_len){
     cv::Mat edge_img;
     src.copyTo(edge_img);
     vector<vector<int*>> edges;
+    // return edges;
     bool** visit = new bool*[edge_img.rows];
     for(int i = 0; i < edge_img.rows; i++){
         visit[i] = new bool[edge_img.cols];
@@ -324,24 +329,35 @@ vector<vector<int*>> HoughTransformer::get_edgeSubsets(cv::Mat src, int min_len)
         delete[] visit[i];
     }
     delete[] visit;
+
     return edges;
 }
 
+// ! Modify iteration and quantization rate may obtain a higher quality result but would cause a high computation cost. Besides, get_edgeSubsets() greatly affects the quality, so rewrite it if neccessary.
 void HoughTransformer::Hough_Line_Detect_on_Image(cv::Mat src, float max_scan_r, int* quanti_rate, int iteration, vector<float*>* params, int min_len){
     vector<vector<int*>> edges = this->get_edgeSubsets(src, min_len);
+    // reform_subsets_l(src, params);
     for(int i = 0; i < edges.size(); i++){
-        float* tmp_param = new float[2];
+        float* tmp_param = new float[4];
         this->Hough_Line_Detect(edges[i], max_scan_r, quanti_rate, iteration, tmp_param);
         params->push_back(tmp_param);
     }
     return;
 }
+
+
+// ! Modify iteration and quantization rate may obtain a higher quality result but would cause a high computation cost. Besides, get_edgeSubsets() greatly affects the quality, so rewrite it if neccessary.
 void HoughTransformer::Hough_Circle_Detect_on_Image(cv::Mat src, float max_a, float max_b, float max_r, float min_r, int* quanti_rate, int iteration, vector<float*>* params, int min_len){
     vector<vector<int*>> edges = this->get_edgeSubsets(src, min_len);
+    // reform_subsets_c(src, params);
     for(int i = 0; i < edges.size(); i++){
         float* tmp_param = new float[3];
         this->Hough_Circle_Detect(edges[i], max_a, max_b, max_r, min_r, quanti_rate, iteration, tmp_param);
-        params->push_back(tmp_param);
+        if(tmp_param[0] < max_a && tmp_param[1] < max_b && tmp_param[2] > min_r && tmp_param[2] < max_r){
+            params->push_back(tmp_param);
+        }else{
+            delete[] tmp_param;
+        }
     }
     return; 
 }

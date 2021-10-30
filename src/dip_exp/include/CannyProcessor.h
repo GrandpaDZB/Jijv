@@ -24,7 +24,7 @@ public:
     int constrain(int num, int max);
     gradient_matrix SobelConv(cv::Mat src);
     vector<vector<int>> find_link_neighbors(cv::Mat p, int x, int y);
-    cv::Mat Link(cv::Mat p1, cv::Mat p2);
+    cv::Mat Link(cv::Mat p1, cv::Mat p2, int index = 4);
 
     CannyProcessor(/* args */);
     ~CannyProcessor();
@@ -49,9 +49,6 @@ vector<vector<int>> CannyProcessor::find_link_neighbors(cv::Mat p, int x, int y)
             }
         }
     }
-    // for(auto &each:neighbors){
-    //     cout << each[0] << " " << each[1] << endl;
-    // }
     return neighbors;
 }
 
@@ -61,7 +58,7 @@ void CannyProcessor::DoubleThreshold(cv::Mat src, int th1, int th2, cv::Mat* ptr
     return;
 }
 
-cv::Mat CannyProcessor::Link(cv::Mat q1, cv::Mat q2){
+cv::Mat CannyProcessor::Link(cv::Mat q1, cv::Mat q2, int index){
     cv::Mat p1,p2;
     q1.copyTo(p1);
     q2.copyTo(p2);
@@ -71,6 +68,7 @@ cv::Mat CannyProcessor::Link(cv::Mat q1, cv::Mat q2){
         visit[i] = new bool[p1.cols];
     }
     bool finish_check = false;
+    // p2 = transform_c(index);
 
     while(!finish_check){
         for(int i = 0; i < p1.rows; i ++){
@@ -154,7 +152,6 @@ cv::Mat CannyProcessor::Link(cv::Mat q1, cv::Mat q2){
         }
     }
     return p2;
-
 }
 
 cv::Mat CannyProcessor::Conv(cv::Mat X, cv::Mat H){

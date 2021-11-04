@@ -136,7 +136,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/grandpadzb/github/Jijv/build/gtest/cmake_install.cmake")
+  include("/home/grandpadzb/github/Jijv/build/dashgo_driver/cmake_install.cmake")
   include("/home/grandpadzb/github/Jijv/build/dip_exp/cmake_install.cmake")
+  include("/home/grandpadzb/github/Jijv/build/dip_final/cmake_install.cmake")
   include("/home/grandpadzb/github/Jijv/build/main_controller/cmake_install.cmake")
 
 endif()

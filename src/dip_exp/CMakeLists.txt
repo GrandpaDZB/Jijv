@@ -63,3 +63,9 @@ target_link_libraries(exp3
   ${THIRD_PARTY_LIBS}
   ${catkin_LIBRARIES}
 )
+add_executable(exp4
+  src/exp4.cpp)
+target_link_libraries(exp4
+  ${THIRD_PARTY_LIBS}
+  ${catkin_LIBRARIES}
+)

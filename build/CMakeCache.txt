@@ -237,12 +237,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Value Computed by CMake
-DIP_exp_BINARY_DIR:STATIC=/home/grandpadzb/github/Jijv/build/dip_exp
-
-//Value Computed by CMake
-DIP_exp_SOURCE_DIR:STATIC=/home/grandpadzb/github/Jijv/src/dip_exp
-
 //Path to a program.
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
@@ -330,17 +324,32 @@ actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //The directory containing a CMake configuration file for cv_bridge.
-cv_bridge_DIR:PATH=/opt/ros/melodic/share/cv_bridge/cmake
+cv_bridge_DIR:PATH=/home/grandpadzb/catkin_ws/install/share/cv_bridge/cmake
+
+//Value Computed by CMake
+dashgo_driver_BINARY_DIR:STATIC=/home/grandpadzb/github/Jijv/build/dashgo_driver
+
+//Value Computed by CMake
+dashgo_driver_SOURCE_DIR:STATIC=/home/grandpadzb/github/Jijv/src/dashgo_driver
 
 //Value Computed by CMake
 dip_exp_BINARY_DIR:STATIC=/home/grandpadzb/github/Jijv/build/dip_exp
 
 //Value Computed by CMake
 dip_exp_SOURCE_DIR:STATIC=/home/grandpadzb/github/Jijv/src/dip_exp
+
+//Value Computed by CMake
+dip_final_BINARY_DIR:STATIC=/home/grandpadzb/github/Jijv/build/dip_final
+
+//Value Computed by CMake
+dip_final_SOURCE_DIR:STATIC=/home/grandpadzb/github/Jijv/src/dip_final
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake
@@ -415,6 +424,9 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libserial.so
 
@@ -427,11 +439,20 @@ main_controller_SOURCE_DIR:STATIC=/home/grandpadzb/github/Jijv/src/main_controll
 //The directory containing a CMake configuration file for mavros_msgs.
 mavros_msgs_DIR:PATH=/opt/ros/melodic/share/mavros_msgs/cmake
 
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
+
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
@@ -447,6 +468,12 @@ roscpp_traits_DIR:PATH=/opt/ros/melodic/share/roscpp_traits/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
@@ -585,7 +612,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

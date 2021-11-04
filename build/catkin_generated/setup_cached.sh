@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD='/home/grandpadzb/github/Jijv/build'
+export PYTHONPATH='/home/grandpadzb/github/Jijv/devel/lib/python2.7/dist-packages:/home/grandpadzb/sun_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/home/grandpadzb/catkin_ws/install/lib/python3/dist-packages'

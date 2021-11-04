@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"dip_exp\"
 
-CXX_INCLUDES = -I/home/grandpadzb/github/Jijv/src/dip_exp/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -isystem /usr/local/include/opencv
+CXX_INCLUDES = -I/home/grandpadzb/github/Jijv/src/dip_exp/include -I/home/grandpadzb/catkin_ws/install/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/local/include/opencv
 
 CXX_FLAGS =  -std=c++11 -O0 -g
 

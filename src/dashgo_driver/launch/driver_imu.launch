@@ -1,0 +1,6 @@
+<launch>
+  <param name="/use_sim_time" value="false" />
+  <node name="dashgo_driver" pkg="dashgo_driver" type="dashgo_driver.py" output="screen" respawn="true">
+    <rosparam file="$(find dashgo_driver)/config/my_dashgo_params_imu.yaml" command="load" />
+  </node>
+</launch>

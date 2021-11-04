@@ -1,2 +1,2 @@
-dip_exp:main_controller
+dashgo_driver:dip_exp:dip_final:main_controller
 -DCATKIN_DEVEL_PREFIX=/home/grandpadzb/github/Jijv/devel -DCMAKE_INSTALL_PREFIX=/home/grandpadzb/github/Jijv/install -G Unix Makefiles

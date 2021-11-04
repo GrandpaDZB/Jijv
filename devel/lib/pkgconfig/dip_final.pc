@@ -1,0 +1,8 @@
+prefix=/home/grandpadzb/github/Jijv/devel
+
+Name: dip_final
+Description: Description of dip_final
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
